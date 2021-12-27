@@ -1,0 +1,81 @@
+import { com as exportHierarchyRoot } from '@spotify-internal/dunder-client/models/com/spotify/ads/dunder/ExportResponse';
+import { com as HierarchyColumnRoot } from '@spotify-internal/adstudio-bff-clients/models/com/spotify/adstudiobff/proto/HierarchyColumn';
+
+export type ExportResponse = exportHierarchyRoot.spotify.ads.dunder.IExportResponse;
+
+export type BffHierarchyColumns = HierarchyColumnRoot.spotify.adstudiobff.proto.HierarchyColumn.Column;
+export const HierarchyColumns: Record<
+  BffHierarchyColumns,
+  BffHierarchyColumns
+> = {
+  UNKNOWN: 'UNKNOWN',
+  FLIGHT_START_DATE: 'FLIGHT_START_DATE',
+  FLIGHT_END_DATE: 'FLIGHT_END_DATE',
+  FLIGHT_NAME: 'FLIGHT_NAME',
+  FLIGHT_STATUS: 'FLIGHT_STATUS',
+  FLIGHT_COST_MODEL: 'FLIGHT_COST_MODEL',
+  FLIGHT_BUDGET: 'FLIGHT_BUDGET',
+  CAMPAIGN_NAME: 'CAMPAIGN_NAME',
+  CAMPAIGN_STATUS: 'CAMPAIGN_STATUS',
+  CREATIVE_NAME: 'CREATIVE_NAME',
+  CREATIVE_STATUS: 'CREATIVE_STATUS',
+  ADS_SERVED: 'ADS_SERVED',
+  ADS_SERVED_REACH: 'ADS_SERVED_REACH',
+  CTR: 'CTR',
+  CLICKS: 'CLICKS',
+  ADS_SERVED_AVERAGE_FREQUENCY: 'ADS_SERVED_AVERAGE_FREQUENCY',
+  SPEND: 'SPEND',
+  LISTENS: 'LISTENS',
+  LISTENS_RATE: 'LISTENS_RATE',
+  LISTENS_REACH: 'LISTENS_REACH',
+  LISTENS_AVERAGE_FREQUENCY: 'LISTENS_AVERAGE_FREQUENCY',
+  NEW_LISTENERS: 'NEW_LISTENERS',
+  INTENT_RATE: 'INTENT_RATE',
+  LISTENER_CONVERSION_RATE: 'LISTENER_CONVERSION_RATE',
+  NEW_LISTENER_CONVERSION_RATE: 'NEW_LISTENER_CONVERSION_RATE',
+  AVERAGE_STREAMS_PER_LISTENER: 'AVERAGE_STREAMS_PER_LISTENER',
+  AVERAGE_STREAMS_PER_NEW_LISTENER: 'AVERAGE_STREAMS_PER_NEW_LISTENER',
+  LISTENERS: 'LISTENERS',
+  COMPLETION_RATE: 'COMPLETION_RATE',
+  STARTS: 'STARTS',
+  FIRST_QUARTILES: 'FIRST_QUARTILES',
+  MIDPOINTS: 'MIDPOINTS',
+  THIRD_QUARTILES: 'THIRD_QUARTILES',
+  COMPLETES: 'COMPLETES',
+  FORMAT: 'FORMAT',
+  PLACEMENT: 'PLACEMENT',
+  EXTERNAL_IMPRESSIONS: 'EXTERNAL_IMPRESSIONS',
+};
+
+export type BffCampaignSort = Exclude<
+  BffHierarchyColumns,
+  | 'UNKNOWN'
+  | 'FLIGHT_START_DATE'
+  | 'FLIGHT_END_DATE'
+  | 'FLIGHT_NAME'
+  | 'FLIGHT_STATUS'
+  | 'FLIGHT_COST_MODEL'
+  | 'FLIGHT_BUDGET'
+  | 'CREATIVE_NAME'
+  | 'CREATIVE_STATUS'
+>;
+export type BffFlightSort = Exclude<
+  BffHierarchyColumns,
+  | 'UNKNOWN'
+  | 'CAMPAIGN_NAME'
+  | 'CAMPAIGN_STATUS'
+  | 'CREATIVE_NAME'
+  | 'CREATIVE_STATUS'
+>;
+export type BffCreativeSort = Exclude<
+  BffHierarchyColumns,
+  | 'UNKNOWN'
+  | 'FLIGHT_START_DATE'
+  | 'FLIGHT_END_DATE'
+  | 'FLIGHT_NAME'
+  | 'FLIGHT_STATUS'
+  | 'FLIGHT_COST_MODEL'
+  | 'FLIGHT_BUDGET'
+  | 'CAMPAIGN_NAME'
+  | 'CAMPAIGN_STATUS'
+>;

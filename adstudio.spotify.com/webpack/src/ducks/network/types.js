@@ -1,0 +1,1 @@
+export const NETWORK_STATUS = 'NETWORK_STATUS';

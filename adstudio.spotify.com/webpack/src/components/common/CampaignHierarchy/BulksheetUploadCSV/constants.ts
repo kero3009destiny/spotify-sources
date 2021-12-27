@@ -1,0 +1,10 @@
+export const TRY_AGAIN_BTN_TEST_ID = 'bulksheet-try-again';
+export const SUBMIT_BTN_TEST_ID = 'bulksheet-submit';
+export const CANCEL_BTN_TEST_ID = 'cancel-bulksheet-submit';
+export const UPLOAD_BTN_TEST_ID = 'bulksheet-upload';
+export const CHANGE_LOG_SECTION = 'change-log-section';
+export const DISCARD_CHANGES_WARNING = 'discard-changes-warning-modal';
+export const CONFIRM_DISCARD_CHANGES = 'confirm-discard-changes';
+export const CANCEL_DISCARD_CHANGES = 'cancel-discard-changes';
+export const READ_ONLY_PERMISSION_CLOSE_BTN = 'close-bulksheet';
+export const SUBMISSION_ERROR_BANNER = 'submission-error-banner';

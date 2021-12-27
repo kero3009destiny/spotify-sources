@@ -1,0 +1,4 @@
+export const TEST_IDS: Record<string, string> = {
+  CREATIVE_EMPTY_STATE: 'CREATIVE_EMPTY_STATE',
+  FLIGHT_EMPTY_STATE: 'FLIGHT_EMPTY_STATE',
+};
