@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/spotify-logo-white-65e551cd8d8f42d26f5a31a8344419d7.svg";
