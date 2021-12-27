@@ -1,0 +1,8 @@
+
+    (window.__NEXT_P = window.__NEXT_P || []).push([
+      "/setup/anchor/[step]",
+      function () {
+        return require("private-next-pages/setup/anchor/[step].tsx");
+      }
+    ]);
+  

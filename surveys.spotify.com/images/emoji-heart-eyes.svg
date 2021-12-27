@@ -1,0 +1,8 @@
+module.exports = __webpack_public_path__ + "static/media/emoji-heart-eyes.5cd91270.svg";
+
+
+//////////////////
+// WEBPACK FOOTER
+// ./src/images/emoji-heart-eyes.svg
+// module id = 535
+// module chunks = 0
