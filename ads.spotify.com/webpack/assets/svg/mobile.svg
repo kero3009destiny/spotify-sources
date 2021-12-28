@@ -1,0 +1,5 @@
+import React from "react";
+export default (({
+  styles = {},
+  ...props
+}) => <svg viewBox="0 0 339 732" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}><path fillRule="evenodd" clipRule="evenodd" d="M338.407 688.21c0 23.845-19.492 43.353-43.317 43.353H43.318C19.491 731.563 0 712.055 0 688.21V43.353C0 19.508 19.492 0 43.318 0H295.09c23.825 0 43.317 19.508 43.317 43.353V688.21z" fill="#EAEAEA" /></svg>);

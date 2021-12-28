@@ -1,0 +1,5 @@
+import React from "react";
+export default (({
+  styles = {},
+  ...props
+}) => <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 640 480" {...props}><defs><clipPath id="a"><path fillOpacity=".67" d="M-88 32h640v480H-88z" /></clipPath></defs><g fillRule="evenodd" clipPath="url(#a)" transform="translate(88 -32)" strokeWidth="1pt"><path fill="#fff" d="M-128 32h720v480h-720z" /><circle transform="matrix(.8 0 0 .8 -168.4 8.6)" cy="344.05" cx="523.08" fill="#d30000" r="194.93" /></g></svg>);

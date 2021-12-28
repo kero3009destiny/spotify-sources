@@ -1,0 +1,159 @@
+"use strict";
+
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+require("core-js/modules/es6.object.define-property");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.createConfig = void 0;
+
+require("core-js/modules/es6.array.for-each");
+
+require("core-js/modules/es6.string.starts-with");
+
+require("core-js/modules/es6.regexp.replace");
+
+require("core-js/modules/es6.array.map");
+
+var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
+
+require("core-js/modules/es6.array.index-of");
+
+require("core-js/modules/es6.array.filter");
+
+var _defaultConfig = require("./default-config");
+
+var _utils = require("../utils");
+
+var deepMergeObjects = ['backend', 'detection'];
+
+var dedupe = function dedupe(names) {
+  return names.filter(function (v, i) {
+    return names.indexOf(v) === i;
+  });
+};
+
+var STATIC_LOCALE_PATH = 'static/locales';
+
+var createConfig = function createConfig(userConfig) {
+  if (typeof userConfig.localeSubpaths === 'string') {
+    throw new Error('The localeSubpaths option has been changed to an object. Please refer to documentation.');
+  }
+  /*
+    Initial merge of default and user-provided config
+  */
+
+
+  var combinedConfig = (0, _objectSpread2["default"])({}, _defaultConfig.defaultConfig, userConfig);
+  /*
+    Sensible defaults to prevent user duplication
+  */
+
+  combinedConfig.allLanguages = dedupe(combinedConfig.otherLanguages.concat([combinedConfig.defaultLanguage]));
+  combinedConfig.whitelist = combinedConfig.allLanguages;
+  var allLanguages = combinedConfig.allLanguages,
+      defaultLanguage = combinedConfig.defaultLanguage,
+      localeExtension = combinedConfig.localeExtension,
+      localePath = combinedConfig.localePath,
+      localeStructure = combinedConfig.localeStructure;
+
+  if ((0, _utils.isServer)()) {
+    var fs = eval("require('fs')");
+
+    var path = require('path');
+
+    var serverLocalePath = localePath;
+    /*
+      Validate defaultNS
+      https://github.com/isaachinman/next-i18next/issues/358
+    */
+
+    if (typeof combinedConfig.defaultNS === 'string') {
+      var defaultFile = "/".concat(defaultLanguage, "/").concat(combinedConfig.defaultNS, ".").concat(localeExtension);
+      var defaultNSPath = path.join(process.cwd(), localePath, defaultFile);
+      var defaultNSExists = fs.existsSync(defaultNSPath);
+
+      if (!defaultNSExists) {
+        /*
+          If defaultNS doesn't exist, try to fall back to the deprecated static folder
+          https://github.com/isaachinman/next-i18next/issues/523
+        */
+        var staticDirPath = path.join(process.cwd(), STATIC_LOCALE_PATH, defaultFile);
+        var staticDirExists = fs.existsSync(staticDirPath);
+
+        if (staticDirExists) {
+          (0, _utils.consoleMessage)('warn', 'next-i18next: Falling back to /static folder, deprecated in next@9.1.*', combinedConfig);
+          serverLocalePath = STATIC_LOCALE_PATH;
+        } else if (process.env.NODE_ENV !== 'production') {
+          throw new Error("Default namespace not found at ".concat(defaultNSPath));
+        }
+      }
+    }
+    /*
+      Set server side backend
+    */
+
+
+    combinedConfig.backend = {
+      loadPath: path.join(process.cwd(), "".concat(serverLocalePath, "/").concat(localeStructure, ".").concat(localeExtension)),
+      addPath: path.join(process.cwd(), "".concat(serverLocalePath, "/").concat(localeStructure, ".missing.").concat(localeExtension))
+      /*
+        Set server side preload (languages and namespaces)
+      */
+
+    };
+    combinedConfig.preload = allLanguages;
+
+    if (!combinedConfig.ns) {
+      var getAllNamespaces = function getAllNamespaces(p) {
+        return fs.readdirSync(p).map(function (file) {
+          return file.replace(".".concat(localeExtension), '');
+        });
+      };
+
+      combinedConfig.ns = getAllNamespaces(path.join(process.cwd(), "".concat(serverLocalePath, "/").concat(defaultLanguage)));
+    }
+  } else {
+    var clientLocalePath = localePath;
+    /*
+      Remove public prefix from client site config
+    */
+
+    if (localePath.startsWith('public/')) {
+      clientLocalePath = localePath.replace(/^public\//, '');
+    }
+    /*
+      Set client side backend
+    */
+
+
+    combinedConfig.backend = {
+      loadPath: "/".concat(clientLocalePath, "/").concat(localeStructure, ".").concat(localeExtension),
+      addPath: "/".concat(clientLocalePath, "/").concat(localeStructure, ".missing.").concat(localeExtension)
+    };
+    combinedConfig.ns = [combinedConfig.defaultNS];
+  }
+  /*
+    Set fallback language to defaultLanguage in production
+  */
+
+
+  if (!userConfig.fallbackLng) {
+    combinedConfig.fallbackLng = process.env.NODE_ENV === 'production' ? combinedConfig.defaultLanguage : false;
+  }
+  /*
+    Deep merge with overwrite - goes last
+  */
+
+
+  deepMergeObjects.forEach(function (obj) {
+    if (userConfig[obj]) {
+      combinedConfig[obj] = (0, _objectSpread2["default"])({}, _defaultConfig.defaultConfig[obj], userConfig[obj]);
+    }
+  });
+  return combinedConfig;
+};
+
+exports.createConfig = createConfig;

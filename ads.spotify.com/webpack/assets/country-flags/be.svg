@@ -1,0 +1,5 @@
+import React from "react";
+export default (({
+  styles = {},
+  ...props
+}) => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 32" {...props}><path d="M0 0h14.222v32H0V0z" /><path d="M14.222 0h14.222v32H14.222V0z" fill="#FFD90C" /><path d="M28.445 0h14.222v32H28.445V0z" fill="#F31830" /></svg>);
