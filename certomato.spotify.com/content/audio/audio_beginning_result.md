@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/audio_beginning_result.78edf51d.md";

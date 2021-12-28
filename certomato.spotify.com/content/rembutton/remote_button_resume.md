@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/remote_button_resume.16976bdc.md";

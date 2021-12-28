@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/marketing_connect_sticker_result.f8ddb91a.md";

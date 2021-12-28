@@ -1,0 +1,36 @@
+export const CERTIFICATION_STATUSES = Object.freeze({
+  PASSED: 'PASSED',
+  TESTING: 'TESTING',
+  SUBMITTED: 'SUBMITTED',
+  FAILED: 'FAILED',
+  DELETED: 'DELETED',
+});
+
+export const CERTIFICATION_FILTERS = Object.freeze({
+  ...CERTIFICATION_STATUSES,
+  ALL: 'ALL',
+  TESTING_CURRENT_USER: 'TESTING_CURRENT_USER',
+});
+
+export const CERTIFICATION_ACTIONS = Object.freeze({
+  STARTED: 'STARTED',
+  SUBMITTED: 'SUBMITTED',
+  AUTO_APPROVED: 'AUTO_APPROVED',
+  APPROVED: 'APPROVED',
+  REJECTED: 'REJECTED',
+  COMMENT: 'COMMENT',
+});
+
+export const CERTIFICATION_ACTIONS_READABLE = Object.freeze({
+  STARTED: 'Started',
+  SUBMITTED: 'Submitted',
+  AUTO_APPROVED: 'Auto-approved',
+  APPROVED: 'Approved',
+  REJECTED: 'Rejected',
+});
+
+export const CERTIFICATION_FEATURES = Object.freeze({
+  CAST: 'Cast',
+  ALEXA_WITH_SPOTIFY: 'Spotify Alexa',
+  ALEXA_WITHOUT_SPOTIFY: 'Alexa',
+});

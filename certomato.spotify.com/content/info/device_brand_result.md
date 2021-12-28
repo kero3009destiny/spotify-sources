@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/device_brand_result.bcaaeabe.md";

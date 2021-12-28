@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_what_artist_result.a9ccdf2b.md";

@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/summary.841b9fc5.md";

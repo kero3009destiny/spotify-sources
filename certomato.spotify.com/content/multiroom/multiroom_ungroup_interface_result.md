@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/multiroom_ungroup_interface_result.06d45f81.md";

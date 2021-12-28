@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/marketing_press_release_result.d3e94aa7.md";

@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_play_spotify_result.5692fafc.md";

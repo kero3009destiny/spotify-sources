@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/manual_spotify_result.e870542e.md";

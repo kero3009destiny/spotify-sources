@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/certificationmode.bb8d9dac.md";

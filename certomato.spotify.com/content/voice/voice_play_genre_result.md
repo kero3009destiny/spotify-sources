@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_play_genre_result.1e287dcd.md";

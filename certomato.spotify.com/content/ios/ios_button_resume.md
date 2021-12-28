@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/ios_button_resume.309b6dbd.md";

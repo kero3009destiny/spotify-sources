@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_seek_forward_result.3b2b9bb4.md";

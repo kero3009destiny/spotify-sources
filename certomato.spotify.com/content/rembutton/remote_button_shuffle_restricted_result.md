@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/remote_button_shuffle_restricted_result.072e56df.md";

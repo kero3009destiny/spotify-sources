@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/marketing_company_website_result.9f417fe9.md";

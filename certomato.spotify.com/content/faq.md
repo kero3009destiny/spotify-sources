@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/faq.22a47c72.md";

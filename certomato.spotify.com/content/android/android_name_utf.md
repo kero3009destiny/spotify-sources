@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/android_name_utf.ea5b0d55.md";

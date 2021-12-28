@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_rewind_result.8b288cd6.md";

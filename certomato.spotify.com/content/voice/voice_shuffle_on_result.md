@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_shuffle_on_result.7115eb84.md";

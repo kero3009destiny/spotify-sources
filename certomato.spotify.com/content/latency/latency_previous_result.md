@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/latency_previous_result.157593f2.md";

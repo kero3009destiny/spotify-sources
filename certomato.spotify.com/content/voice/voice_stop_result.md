@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_stop_result.ba5bc292.md";

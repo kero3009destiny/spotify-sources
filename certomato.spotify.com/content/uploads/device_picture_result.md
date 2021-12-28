@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/device_picture_result.830a0d94.md";

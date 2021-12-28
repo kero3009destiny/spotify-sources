@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/device_client_id_result.2996cd21.md";

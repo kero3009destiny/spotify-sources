@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_play_result.860bb88c.md";

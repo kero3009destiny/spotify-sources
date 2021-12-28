@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_volume_down_result.45676a9c.md";

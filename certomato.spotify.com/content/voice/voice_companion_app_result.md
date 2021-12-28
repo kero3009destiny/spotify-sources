@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_companion_app_result.e64444a2.md";

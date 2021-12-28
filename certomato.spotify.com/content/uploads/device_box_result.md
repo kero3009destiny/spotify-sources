@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/device_box_result.fa310440.md";

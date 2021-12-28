@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_discover_weekly_result.f16b9b9a.md";

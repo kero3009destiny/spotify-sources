@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/multiroom_sleep_mode_result.07fb047d.md";

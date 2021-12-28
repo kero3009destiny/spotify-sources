@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/external_takeover_result.ba4cd445.md";

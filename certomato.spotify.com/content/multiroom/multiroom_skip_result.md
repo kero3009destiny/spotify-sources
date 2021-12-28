@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/multiroom_skip_result.5c4d4baf.md";

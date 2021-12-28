@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/android_button_resume.b667e058.md";

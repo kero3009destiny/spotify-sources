@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/ios_display_logo_result.a2a53290.md";

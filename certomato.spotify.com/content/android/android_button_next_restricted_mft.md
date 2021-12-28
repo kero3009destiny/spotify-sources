@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/android_button_next_restricted_mft.039e25c3.md";

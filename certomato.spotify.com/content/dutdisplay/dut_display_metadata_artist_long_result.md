@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/dut_display_metadata_artist_long_result.051b276d.md";

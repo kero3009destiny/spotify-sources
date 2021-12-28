@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/marketing_service_logo_result.430075f9.md";

@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/multiroom_group_speakers_result.f980426a.md";

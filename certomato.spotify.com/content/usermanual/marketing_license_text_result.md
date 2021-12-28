@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/marketing_license_text_result.3014524a.md";

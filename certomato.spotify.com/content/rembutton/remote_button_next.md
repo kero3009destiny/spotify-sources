@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/remote_button_next.f01a71c3.md";

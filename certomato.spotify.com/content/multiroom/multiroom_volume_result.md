@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/multiroom_volume_result.2025ffec.md";

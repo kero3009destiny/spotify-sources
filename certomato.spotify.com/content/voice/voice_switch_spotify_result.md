@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_switch_spotify_result.72e53fe6.md";

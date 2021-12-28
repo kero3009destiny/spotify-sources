@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_resume_result.6a3628ca.md";

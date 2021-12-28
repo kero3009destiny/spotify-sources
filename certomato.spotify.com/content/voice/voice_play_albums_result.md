@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_play_albums_result.f9facc1a.md";

@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/multiroom_group_interface_result.034cdf7a.md";

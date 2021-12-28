@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_loop_on_result.105d82da.md";

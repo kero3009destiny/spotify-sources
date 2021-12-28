@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_personal_content_result.f767c1bd.md";

@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/logo_parity_with_other_brands_result.1a633110.md";

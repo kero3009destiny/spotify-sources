@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/preset_store_result.1714bc7d.md";

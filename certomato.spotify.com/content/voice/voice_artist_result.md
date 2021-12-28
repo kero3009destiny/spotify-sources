@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_artist_result.fbe5ed8c.md";

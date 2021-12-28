@@ -1,0 +1,11 @@
+export { default as GeneralSlide } from './generalSlide';
+export { default as VideoSlide } from './videoSlide';
+export { default as QuizSlide } from './quizSlide';
+export { default as QuizSlideMobile } from './quizSlideMobile';
+export { default as StatSlide } from './statSlide';
+export { default as SpotifySlide } from './spotifySlide';
+export { default as RouletteSlide } from './rouletteSlide';
+export { default as RollingTextSlide } from './rollingTextSlide';
+export { default as AudioFeaturesSlide } from './audioFeaturesSlide';
+export { default as TwoColumnSlide } from './twoColumnSlide';
+export { default as SplitLayoutSlide } from './splitLayoutSlide';

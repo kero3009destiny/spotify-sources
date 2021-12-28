@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/android_display_logo_result.5e754508.md";

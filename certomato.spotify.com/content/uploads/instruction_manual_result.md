@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/instruction_manual_result.d2fd1489.md";

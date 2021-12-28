@@ -1,0 +1,1 @@
+module.exports = __webpack_public_path__ + "static/media/voice_switch_amazon_result.a2443cd1.md";
