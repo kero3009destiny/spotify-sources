@@ -11,3 +11,7 @@ feel free to read `2021-12-28_report_1437087.pdf` and `2021-12-28_report_1436047
 # whoami
 find me on the internet by searching `dirt3009` (disclaimer: I'm not on Twitter.)
 you can also DM me on discord @ dirt#3009
+
+# disclaimers
+this repo was not made with educational purposes, it was made %100 with malintent to Spotify AB and company.
+that is also why NO file has been redacted
