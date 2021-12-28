@@ -7,3 +7,7 @@ you can create an issue with the sourcemaps or contribute with a PR (file integr
 
 # proof????? 🤓🤓🤓
 feel free to read `2021-12-28_report_1437087.pdf` and `2021-12-28_report_1436047.pdf`
+
+# whoami
+find me on the internet by searching `dirt3009` (disclaimer: I'm not on Twitter.)
+you can also DM me on discord @ dirt#3009
