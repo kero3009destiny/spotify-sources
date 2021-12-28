@@ -1,3 +1,5 @@
+![Visitor count](https://shields-io-visitor-counter.herokuapp.com/badge?page=kero3009destiny.spotify-source)
+
 # what is this?
 spotify on hackerone has told me in 12/26/2021 that they don't see any attack vectors in sourcemaps so i decided to publish these publicly.
 have fun. 😁
