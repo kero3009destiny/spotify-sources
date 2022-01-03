@@ -18,4 +18,4 @@ you can also DM me on discord @ dirt#3009
 this repo was not made with educational purposes, it was made %100 with malintent to Spotify AB and company.
 that is also why NO file has been redacted
 
-![TheFuckingOrder](https://github.com/kero3009destiny/spotify-sources/blob/main/h0lysh1t-nonames.png)
+![TheFuckingOrder](h0lysh1t-nonames.png)
