@@ -1,0 +1,6 @@
+__webpack_require__.H = {};
+__webpack_require__.G = function(chunkId) {
+	Object.keys(__webpack_require__.H).map(function(key) {
+		__webpack_require__.H[key](chunkId);
+	});
+}

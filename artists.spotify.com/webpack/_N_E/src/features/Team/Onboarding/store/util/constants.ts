@@ -1,0 +1,1 @@
+export var MEDIA_ID_LENGTH = 22;
