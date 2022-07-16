@@ -3,6 +3,11 @@
 # what is this?
 spotify on hackerone has told me in 12/26/2021 that they don't see any attack vectors in sourcemaps so i decided to publish these publicly.
 have fun. 😁
+UPDATE: Hackerone has just contacted me about this at 16/07/2022 and I have told them to ![image](https://user-images.githubusercontent.com/26773027/179354815-de8d1217-0df4-4046-a963-581b04e0c1ec.png)
+
+## Their message
+![image](https://user-images.githubusercontent.com/26773027/179354850-e0401ae0-1416-4718-be76-110d020da173.png)
+![image](https://user-images.githubusercontent.com/26773027/179354865-cf8ae007-0fd7-45a5-adc4-396526112c30.png)
 
 # contributions?
 you can create an issue with the sourcemaps or contribute with a PR (file integrity will be checked)
