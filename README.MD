@@ -16,8 +16,9 @@ you can create an issue with the sourcemaps or contribute with a PR (file integr
 feel free to read `2021-12-28_report_1437087.pdf` and `2021-12-28_report_1436047.pdf`
 
 # whoami
-find me on the internet by searching `dirt3009` (disclaimer: I'm not on Twitter.)
-you can also DM me on discord @ dirt#3009
+HARASS ME @
+- dc dirt#3009
+- tw HOLYGLORY3009
 
 # disclaimers
 this repo was not made with educational purposes, it was made %100 with malintent to Spotify AB and company.
